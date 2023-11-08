@@ -159,8 +159,6 @@ function selectGame() {
     window.location.href = 'runners/fireboyandwatergirl1.html';
   } else if (game.value === 'flappybird') {
     window.location.href = 'runners/flappybird.html';
-  } else if (game.value === 'fleeingthecomplex') {
-    window.location.href = 'runners/fleeingthecomplex.html';
   } else if (game.value === 'flight') {
     window.location.href = 'runners/flight.html';
   } else if (game.value === 'flingecommerce') {
