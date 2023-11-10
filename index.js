@@ -1,7 +1,7 @@
 var game = document.getElementById('games');
 
 function selectGame() {
-  if (game.value === ' ') {
+  if (game.value === '') {
     alert('Pleas Choose A Game!');
   } else if (game.value === 'abduction') {
     window.location.href = 'runners/abduction.html';
@@ -91,10 +91,14 @@ function selectGame() {
     window.location.href = 'runners/coverorangewildwest.html';
   } else if (game.value === 'crushthecastle2') {
     window.location.href = 'runners/crushthecastle2.html';
+  } else if (game.value === 'crimsonroom') {
+    window.location.href = 'runners/crimsonroom.html';
   } else if (game.value === 'cubedroidsavesthecalaxy') {
     window.location.href = 'runners/cubedroidsavesthecalaxy.html';
   } else if (game.value === 'cubefield') {
     window.location.href = 'runners/cubefield.html';
+  } else if (game.value === 'cursor10') {
+    window.location.href = 'runners/cursor10.html';
   } else if (game.value === 'cursorinvisible') {
     window.location.href = 'runners/cursorinvisible.html';
   } else if (game.value === 'dacep27') {
@@ -224,6 +228,8 @@ function selectGame() {
     window.location.href = 'runners/learntofly.html';
   } else if (game.value === 'learntofly2') {
     window.location.href = 'runners/learntofly2.html';
+  } else if (game.value === 'linerider2') {
+    window.location.href = 'runners/linerider2.html'
   } else if (game.value === 'mahjong') {
     window.location.href = 'runners/mahjong.html';
   } else if (game.value === 'meatboy') {
@@ -298,6 +304,8 @@ function selectGame() {
     window.location.href = 'runners/robotunicornheavymetal.html';
   } else if (game.value === 'rotateandrollplayerspack') {
     window.location.href = 'runners/rotateandrollplayerspack.html';
+  } else if (game.value === 'run') {
+    window.location.href = 'runners/run.html'
   } else if (game.value === 'runandgun') {
     window.location.href = 'runners/runandgun.html';
   } else if (game.value === 'sandcastle') {
@@ -342,5 +350,73 @@ function selectGame() {
     window.location.href = 'runners/sniperassassin4.html';
   } else if (game.value === 'sniperassassin5') {
     window.location.href = 'runners/sniperassassin5.html';
+  } else if (game.value === 'soniclostinmarioworld') {
+    window.location.href = 'runners/soniclostinmarioworld.html';
+  } else if (game.value === 'stealingthediamond') {
+    window.location.href = 'runners/stealingthediamond.html';
+  } else if (game.value === 'stickmanbadminton') {
+    window.location.href = 'runners/stickmanbadminton.html';
+  } else if (game.value === 'supermario63') {
+    window.location.href = 'runners/supermario63.html';
+  } else if (game.value === 'supermarioflash') {
+    window.location.href = 'runners/supermarioflash.html';
+  } else if (game.value === 'supersmashflash') {
+    window.location.href = 'runners/supersmashflash.html'
+  } else if (game.value === 'supersudoku2011') {
+    window.location.href = 'runners/supersudoku2011.html';
+  } else if (game.value === 'sushicat') {
+    window.location.href = 'runners/sushicat.html'
+  } else if (game.value === 'trex') {
+    window.location.href = 'runners/trex.html'
+  } else if (game.value === 'tacticalassassin') {
+    window.location.href = 'runners/tacticalassassin.html'
+  } else if (game.value === 'tacticalassassin2') {
+    window.location.href = 'runners/tacticalassassin2.html'
+  } else if (game.value === 'tanktroubledeathmatch') {
+    window.location.href = 'runners/tanktroubledeathmatch.html'
+  } else if (game.value === 'thegame') {
+    window.location.href = 'runners/thegame.html'
+  } else if (game.value === 'thegrimadventuresofbillandmandymagnetface') {
+    window.location.href = 'runners/thegrimadventuresofbillandmandymagnetface.html'
+  } else if (game.value === 'thegrimadventuresofbillandmandythefrightbeforechristmas') {
+    window.location.href = 'runners/thegrimadventuresofbillandmandythefrightbeforechristmas.html'
+  } else if (game.value === 'theimpossiblequiz') {
+    window.location.href = 'runners/theimpossiblequiz.html'
+  } else if (game.value === 'thelaststand') {
+    window.location.href = 'runners/thelaststand.html'
+  } else if (game.value === 'thelaststand3') {
+    window.location.href = 'runners/thelaststand3.html'
+  } else if (game.value === "theworld'shardestgame") {
+    window.location.href = "runners/theworld'shardestgame.html"
+  } else if (game.value === "theworld'shardestgame2") {
+    window.location.href = "runners/theworld'shardestgame2.html"
+  } else if (game.value === "theworld'shardestgame3") {
+    window.location.href = "runners/theworld'shardestgame3.html"
+  } else if (game.value === 'thisistheonlylevel') {
+    window.location.href = 'runners/thisistheonlylevel.html'
+  } else if (game.value === 'thisistheonlylevel2') {
+    window.location.href = 'runners/thisistheonlylevel2.html'
+  } else if (game.value === 'tomandjerryrefrigerraiders') {
+    window.location.href = 'runners/tomandjerryrefrigerraiders.html'
+  } else if (game.value === "tomandjerrytopm'strapomatic") {
+    window.location.href = "runners/tomandjerrytopm'strapomatic.html"
+  } else if (game.value === 'truckloader2') {
+    window.location.href = 'runners/truckloader2.html'
+  } else if (game.value === 'truckloader4') {
+    window.location.href = 'runners/truckloader4.html'
+  } else if (game.value === 'ultimateflashsonic') {
+    window.location.href = 'runners/ultimateflashsonic.html'
+  } else if (game.value === 'unfairmario') {
+    window.location.href = 'runners/unfairmario.html'
+  } else if (game.value === 'upgradecomplete') {
+    window.location.href = 'runners/upgradecomplete.html'
+  } else if (game.value === 'videogamethegame') {
+    window.location.href = 'runners/videogamethegame.html'
+  } else if (game.value === 'warfare1917') {
+    window.location.href = 'runners/warfare1917.html'
+  } else if (game.value === 'weaponblackhawk') {
+    window.location.href = 'runners/weaponblackhawk.html'
+  } else if (game.value === 'wormfood') {
+    window.location.href = 'runners/wormfood.html'
   }
 }
