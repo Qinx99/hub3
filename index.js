@@ -292,6 +292,24 @@ function selectGame() {
     window.location.href = 'runners/raftwars.html';
   } else if (game.value === 'raftwars2') {
     window.location.href = 'runners/raftwars2.html';
+  } else if (game.value === 'redball') {
+    window.location.href = 'runners/redball.html'
+  } else if (game.value === 'redball2') {
+    window.location.href = 'runners/redball2.html'
+  } else if (game.value === 'redball3') {
+    window.location.href = 'runners/redball3.html'
+  } else if (game.value === 'redball4v1') {
+    window.location.href = 'runners/redball4v1.html'
+  } else if (game.value === 'redball4v2') {
+    window.location.href = 'runners/redball4v2.html'
+  } else if (game.value === 'redball4v3') {
+    window.location.href = 'runners/redball4v3.html'
+  } else if (game.value === 'red&blueballs') {
+    window.location.href = 'runners/red&blueballs.html'
+  } else if (game.value === 'red&blueballs2') {
+    window.location.href = 'runners/red&blueballs2.html'
+  } else if (game.value === 'red&blueballs3') {
+    window.location.href = 'runners/red&blueballs3.html'
   } else if (game.value === 'reimaginethegame') {
     window.location.href = 'runners/reimaginethegame.html';
   } else if (game.value === 'revengeofthestickman') {
