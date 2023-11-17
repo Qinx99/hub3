@@ -380,6 +380,8 @@ function selectGame() {
     window.location.href = 'runners/supermarioflash.html';
   } else if (game.value === 'supersmashflash') {
     window.location.href = 'runners/supersmashflash.html'
+  } else if (game.value === 'supersmashflash2') {
+    window.location.href = 'runners/supersmashflash2.html'
   } else if (game.value === 'supersudoku2011') {
     window.location.href = 'runners/supersudoku2011.html';
   } else if (game.value === 'sushicat') {
