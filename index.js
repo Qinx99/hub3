@@ -55,6 +55,8 @@ function selectGame() {
     window.location.href = 'runners/boombot.html';
   } else if (game.value === 'boombot2') {
     window.location.href = 'runners/boombot2.html';
+  } else if (game.value === 'boxhead2play') {
+    window.location.href = 'runners/boxhead2play.html'
   } else if (game.value === 'breakingintothebank') {
     window.location.href = 'runners/breakingintothebank.html';
   } else if (game.value === 'bridgetactics') {
@@ -432,7 +434,9 @@ function selectGame() {
     window.location.href = 'runners/upgradecomplete.html'
   } else if (game.value === 'videogamethegame') {
     window.location.href = 'runners/videogamethegame.html'
-  } else if (game.value === 'warfare1917') {
+  } else if (game.value === 'viridianroom'){
+    window.location.href = 'runners/viridianroom.html'
+  }else if (game.value === 'warfare1917') {
     window.location.href = 'runners/warfare1917.html'
   } else if (game.value === 'weaponblackhawk') {
     window.location.href = 'runners/weaponblackhawk.html'
