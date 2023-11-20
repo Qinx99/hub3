@@ -1,446 +1,342 @@
-var game = document.getElementById('games');
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐈‍⬛</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Qinx's Game Hub</h1>
+    </div>
 
-function selectGame() {
-  if (game.value === '') {
-    alert('Pleas Choose A Game!');
-  } else if (game.value === 'abduction') {
-    window.location.href = 'runners/abduction.html';
-  } else if (game.value === 'achievmentunlocked') {
-    window.location.href = 'runners/achievmentunlocked.html';
-  } else if (game.value === 'achievmentunlocked2') {
-    window.location.href = 'runners/achievmentunlocked2.html';
-  } else if (game.value === 'ageofwar') {
-    window.location.href = 'runners/ageofwar.html';
-  } else if (game.value === 'ageofwar2') {
-    window.location.href = 'runners/ageofwar2.html';
-  } else if (game.value === 'appleshooter') {
-    window.location.href = 'runners/appleshooter.html';
-  } else if (game.value === 'arcs') {
-    window.location.href = 'runners/arcs.html';
-  } else if (game.value === 'armormayhem') {
-    window.location.href = 'runners/armormayhem.html';
-  } else if (game.value === 'badpiggies') {
-    window.location.href = 'runners/badpiggies.html';
-  } else if (game.value === 'battleships') {
-    window.location.href = 'runners/battleships.html';
-  } else if (game.value === 'beatupyourpc') {
-    window.location.href = 'runners/beatupyourpc.html';
-  } else if (game.value === 'bigredbutton') {
-    window.location.href = 'runners/bigredbutton.html';
-  } else if (game.value === 'bloonsplayerpack') {
-    window.location.href = 'runners/bloonsplayerpack.html';
-  } else if (game.value === 'bloonsplayerpack2') {
-    window.location.href = 'runners/bloonsplayerpack2.html';
-  } else if (game.value === 'bloonsplayerpack3') {
-    window.location.href = 'runners/bloonsplayerpack3.html';
-  } else if (game.value === 'bloonsplayerpack4') {
-    window.location = 'runners/bloonsplayerpack4.html';
-  } else if (game.value === 'bloonspop3') {
-    window.location = 'runners/bloonspop3.html';
-  } else if (game.value === 'bloonssupermonkey') {
-    window.location.href = 'runners/bloonssupermonkey.html';
-  } else if (game.value === 'bloonstowerdefense') {
-    window.location.href = 'runners/bloonstowerdefense.html';
-  } else if (game.value === 'bloonstowerdefense2') {
-    window.location.href = 'runners/bloonstowerdefense2.html';
-  } else if (game.value === 'bloonstowerdefense3') {
-    window.location.href = 'runners/bloonstowerdefense3.html';
-  } else if (game.value === 'bloonstowerdefense4') {
-    window.location.href = 'runners/bloonstowerdefense4.html';
-  } else if (game.value === 'bloonstowerdefense4expansion') {
-    window.location.href = 'runners/bloonstowerdefense4expansion.html';
-  } else if (game.value === 'bloxorz') {
-    window.location.href = 'runners/bloxorz.html';
-  } else if (game.value === 'boombot') {
-    window.location.href = 'runners/boombot.html';
-  } else if (game.value === 'boombot2') {
-    window.location.href = 'runners/boombot2.html';
-  } else if (game.value === 'boxhead2play') {
-    window.location.href = 'runners/boxhead2play.html'
-  } else if (game.value === 'breakingintothebank') {
-    window.location.href = 'runners/breakingintothebank.html';
-  } else if (game.value === 'bridgetactics') {
-    window.location.href = 'runners/bridgetactics.html';
-  } else if (game.value === 'buildingdemolisher') {
-    window.location.href = 'runners/buildingdemolisher.html';
-  } else if (game.value === 'canyondefense') {
-    window.location.href = 'runners/canyondefense.html';
-  } else if (game.value === 'catmario') {
-    window.location.href = 'runners/catmario.html';
-  } else if (game.value === 'causalitycamp') {
-    window.location.href = 'runners/causalitycamp.html';
-  } else if (game.value === 'causalityfestival') {
-    window.location.href = 'runners/causalityfestival.html';
-  } else if (game.value === 'causalitykitchen') {
-    window.location.href = 'runners/causalitykitchen.html';
-  } else if (game.value === 'caveman') {
-    window.location.href = 'runners/caveman.html';
-  } else if (game.value === 'chibikinght') {
-    window.location.href = 'runners/chibikinght.html';
-  } else if (game.value === 'chibikinghthacked') {
-    window.location.href = 'runners/chibikinghthacked.html';
-  } else if (game.value === 'chinesecheckers') {
-    window.location.href = 'runners/chinesecheckers.html';
-  } else if (game.value === 'clickdeathbowling') {
-    window.location.href = 'runners/clickdeathbowling.html';
-  } else if (game.value === 'coverorange') {
-    window.location.href = 'runners/coverorange.html';
-  } else if (game.value === 'coverorangejourneypirates') {
-    window.location.href = 'runners/coverorangejourneypirates.html';
-  } else if (game.value === 'coverorangeknights') {
-    window.location.href = 'runners/coverorangeknights.html';
-  } else if (game.value === 'coverorangewildwest') {
-    window.location.href = 'runners/coverorangewildwest.html';
-  } else if (game.value === 'crushthecastle2') {
-    window.location.href = 'runners/crushthecastle2.html';
-  } else if (game.value === 'crimsonroom') {
-    window.location.href = 'runners/crimsonroom.html';
-  } else if (game.value === 'cubedroidsavesthecalaxy') {
-    window.location.href = 'runners/cubedroidsavesthecalaxy.html';
-  } else if (game.value === 'cubefield') {
-    window.location.href = 'runners/cubefield.html';
-  } else if (game.value === 'cursor10') {
-    window.location.href = 'runners/cursor10.html';
-  } else if (game.value === 'cursorinvisible') {
-    window.location.href = 'runners/cursorinvisible.html';
-  } else if (game.value === 'dacep27') {
-    window.location.href = 'runners/dacep27.html';
-  } else if (game.value === 'deadparadise') {
-    window.location.href = 'runners/deadparadise.html';
-  } else if (game.value === 'doodlegod') {
-    window.location.href = 'runners/doodlegod.html';
-  } else if (game.value === 'duckhunt') {
-    window.location.href = 'runners/duckhunt.html';
-  } else if (game.value === 'ducklife1') {
-    window.location.href = 'runners/ducklife1.html';
-  } else if (game.value === 'ducklife2') {
-    window.location.href = 'runners/ducklife2.html';
-  } else if (game.value === 'ducklife2hacked') {
-    window.location.href = 'runners/ducklife2hacked.html';
-  } else if (game.value === 'ducklife3') {
-    window.location.href = 'runners/ducklife3.html';
-  } else if (game.value === 'ducklife3hacked') {
-    window.location.href = 'runners/ducklife3hacked.html';
-  } else if (game.value === 'ducklife4') {
-    window.location.href = 'runners/ducklife4.html';
-  } else if (game.value === 'ducklife4hacked') {
-    window.location.href = 'runners/ducklife4hacked.html';
-  } else if (game.value === 'dumpertruck') {
-    window.location.href = 'runners/dumpertruck.html';
-  } else if (game.value === 'earntodie') {
-    window.location.href = 'runners/earntodie.html';
-  } else if (game.value === 'earntodie2012part2') {
-    window.location.href = 'runners/earntodie2012part2.html';
-  } else if (game.value === 'electricman2') {
-    window.location.href = 'runners/electricman2.html';
-  } else if (game.value === 'electricman2hacked') {
-    window.location.href = 'runners/electricman2hacked.html';
-  } else if (game.value === 'endoftheworld') {
-    window.location.href = 'runners/endoftheworld.html';
-  } else if (game.value === 'escapingtheprison') {
-    window.location.href = 'runners/escapingtheprison.html';
-  } else if (game.value === 'fancypantsworld1') {
-    window.location.href = 'runners/fancypantsworld1.html';
-  } else if (game.value === 'fancypantsworld2') {
-    window.location.href = 'runners/fancypantsworld2.html';
-  } else if (game.value === 'feedus1') {
-    window.location.href = 'runners/feedus1.html';
-  } else if (game.value === 'feedus2') {
-    window.location.href = 'runners/feedus2.html';
-  } else if (game.value === 'feedus3') {
-    window.location.href = 'runners/feedus3.html';
-  } else if (game.value === 'feedus4') {
-    window.location.href = 'runners/feedus4.html';
-  } else if (game.value === 'feedus5') {
-    window.location.href = 'runners/feedus5.html';
-  } else if (game.value === 'feedushappy') {
-    window.location.href = 'runners/feedushappy.html';
-  } else if (game.value === 'feeduslostisland') {
-    window.location.href = 'runners/feeduslostisland.html';
-  } else if (game.value === 'feeduspirates') {
-    window.location.href = 'runners/feeduspirates.html';
-  } else if (game.value === 'feedusxmasexpansion') {
-    window.location.href = 'runners/feedusxmasexpansion.html';
-  } else if (game.value === 'fireboyandwatergirl1') {
-    window.location.href = 'runners/fireboyandwatergirl1.html';
-  } else if (game.value === 'flappybird') {
-    window.location.href = 'runners/flappybird.html';
-  } else if (game.value === 'fleeingthecomplex') {
-    window.location.href = 'runners/fleeingthecomplex.html';
-  } else if (game.value === 'flight') {
-    window.location.href = 'runners/flight.html';
-  } else if (game.value === 'flingecommerce') {
-    window.location.href = 'runners/flingecommerce.html';
-  } else if (game.value === 'fostershomeforimaginaryfriendswiltswashnswoosh') {
-    window.location.href =
-      'runners/fostershomeforimaginaryfriendswiltswashnswoosh.html';
-  } else if (game.value === 'fragger') {
-    window.location.href = 'runners/fragger.html';
-  } else if (game.value === 'giveup2') {
-    window.location.href = 'runners/giveup2.html';
-  } else if (game.value === 'goldminer') {
-    window.location.href = 'runners/goldminer.html';
-  } else if (game.value === 'goldminerhacked') {
-    window.location.href = 'runners/goldminerhacked.html';
-  } else if (game.value === 'goldminerspecialedition') {
-    window.location.href = 'runners/goldminerspecialedition.html';
-  } else if (game.value === 'gravityduckhacked') {
-    window.location.href = 'runners/gravityduckhacked.html';
-  } else if (game.value === 'growcube') {
-    window.location.href = 'runners/growcube.html';
-  } else if (game.value === 'growisland') {
-    window.location.href = 'runners/growisland.html';
-  } else if (game.value === 'grownano') {
-    window.location.href = 'runners/grownano.html';
-  } else if (game.value === 'growvalley') {
-    window.location.href = 'runners/growvalley.html';
-  } else if (game.value === 'gunblood') {
-    window.location.href = 'runners/gunblood.html';
-  } else if (game.value === 'gunmayhem') {
-    window.location.href = 'runners/gunmayhem.html';
-  } else if (game.value === 'gunmayhem2') {
-    window.location.href = 'runners/gunmayhem2.html';
-  } else if (game.value === 'handlessmillionaire') {
-    window.location.href = 'runners/handlessmillionaire.html';
-  } else if (game.value === 'hauntthehouse') {
-    window.location.href = 'runners/hauntthehouse.html';
-  } else if (game.value === 'idoneveknow') {
-    window.location.href = 'runners/idoneveknow.html';
-  } else if (game.value === 'isawhertoo,withlasers') {
-    window.location.href = 'runners/isawhertoo,withlasers.html';
-  } else if (game.value === 'jacksmith') {
-    window.location.href = 'runners/jacksmith.html';
-  } else if (game.value === 'jumpit!') {
-    window.location.href = 'runners/jumpit!.html';
-  } else if (game.value === 'jumpit!2') {
-    window.location.href = 'runners/jumpit!2.html';
-  } else if (game.value === 'kingdomrush') {
-    window.location.href = 'runners/kingdomrush.html';
-  } else if (game.value === 'kindomrushfrontiers') {
-    window.location.href = 'runners/kindomrushfrontiers.html';
-  } else if (game.value === 'kittencannon') {
-    window.location.href = 'runners/kittencannon.html';
-  } else if (game.value === 'kndflightofthehamster') {
-    window.location.href = 'runners/kndflightofthehamster.html';
-  } else if (game.value === "kndoperationz.e.r.ooutnumbuh'd!") {
-    window.location.href = "runners/kndoperationz.e.r.ooutnumbuh'd!.html";
-  } else if (game.value === 'kndrainbowmonkeyrundown') {
-    window.location.href = 'runners/kndrainbowmonkeyrundown.html';
-  } else if (game.value === 'learntofly') {
-    window.location.href = 'runners/learntofly.html';
-  } else if (game.value === 'learntofly2') {
-    window.location.href = 'runners/learntofly2.html';
-  } else if (game.value === 'linerider2') {
-    window.location.href = 'runners/linerider2.html'
-  } else if (game.value === 'mahjong') {
-    window.location.href = 'runners/mahjong.html';
-  } else if (game.value === 'meatboy') {
-    window.location.href = 'runners/meatboy.html';
-  } else if (game.value === 'mechaarena') {
-    window.location.href = 'runners/mechaarena.html';
-  } else if (game.value === 'meeblings2') {
-    window.location.href = 'runners/meeblings2.html';
-  } else if (game.value === 'miamishark') {
-    window.location.href = 'runners/miamishark.html';
-  } else if (game.value === 'mineblocks') {
-    window.location.href = 'runners/mineblocks.html';
-  } else if (game.value === 'minecrafttowerdefense') {
-    window.location.href = 'runners/minecrafttowerdefense.html';
-  } else if (game.value === 'minecrafttowerdefense2') {
-    window.location.href = 'runners/minecrafttowerdefense2.html';
-  } else if (game.value === 'nyancatlostinspace') {
-    window.location.href = 'runners/nyancatlostinspace.html';
-  } else if (game.value === 'obeythegame') {
-    window.location.href = 'runners/obeythegame.html';
-  } else if (game.value === 'offtherails') {
-    window.location.href = 'runners/offtherails.html';
-  } else if (game.value === 'pandemic2') {
-    window.location.href = 'runners/pandemic2.html';
-  } else if (game.value === "papa'sburgeria") {
-    window.location.href = "runners/papa'sburgeria.html";
-  } else if (game.value === "papa'scheezeria") {
-    window.location.href = "runners/papa'scheezeria.html";
-  } else if (game.value === "papa'scupcakeria") {
-    window.location.href = "runners/papa'scupcakeria.html";
-  } else if (game.value === "papa'sdonuteria") {
-    window.location.href = "runners/papa'sdonuteria.html";
-  } else if (game.value === "papa'sfreezeria") {
-    window.location.href = "runners/papa'sfreezeria.html";
-  } else if (game.value === "papa'shotdogeria") {
-    window.location.href = "runners/papa'shotdogeria.html";
-  } else if (game.value === 'papalouie') {
-    window.location.href = 'runners/papalouie.html';
-  } else if (game.value === "papa'spancakeria") {
-    window.location.href = "runners/papa'spancakeria.html";
-  } else if (game.value === "papa'spasteria") {
-    window.location.href = "runners/papa'spasteria.html";
-  } else if (game.value === "papa'spizzeria") {
-    window.location.href = "runners/papa'spizzeria.html";
-  } else if (game.value === "papa'stacomia") {
-    window.location.href = "runners/papa'stacomia.html";
-  } else if (game.value === 'penguindiner') {
-    window.location.href = 'runners/penguindiner.html';
-  } else if (game.value === 'pixelchixjamminhamster') {
-    window.location.href = 'runners/pixelchixjamminhamster.html';
-  } else if (game.value === 'pokemontowerdefence') {
-    window.location.href = 'runners/pokemontowerdefence.html';
-  } else if (game.value === 'pong') {
-    window.location.href = 'runners/pong.html';
-  } else if (game.value === 'portaltheflashversion') {
-    window.location.href = 'runners/portaltheflashversion.html';
-  } else if (game.value === 'qwop') {
-    window.location.href = 'runners/qwop.html';
-  } else if (game.value === 'raftwars') {
-    window.location.href = 'runners/raftwars.html';
-  } else if (game.value === 'raftwars2') {
-    window.location.href = 'runners/raftwars2.html';
-  } else if (game.value === 'redball') {
-    window.location.href = 'runners/redball.html'
-  } else if (game.value === 'redball2') {
-    window.location.href = 'runners/redball2.html'
-  } else if (game.value === 'redball3') {
-    window.location.href = 'runners/redball3.html'
-  } else if (game.value === 'redball4v1') {
-    window.location.href = 'runners/redball4v1.html'
-  } else if (game.value === 'redball4v2') {
-    window.location.href = 'runners/redball4v2.html'
-  } else if (game.value === 'redball4v3') {
-    window.location.href = 'runners/redball4v3.html'
-  } else if (game.value === 'red&blueballs') {
-    window.location.href = 'runners/red&blueballs.html'
-  } else if (game.value === 'red&blueballs2') {
-    window.location.href = 'runners/red&blueballs2.html'
-  } else if (game.value === 'red&blueballs3') {
-    window.location.href = 'runners/red&blueballs3.html'
-  } else if (game.value === 'reimaginethegame') {
-    window.location.href = 'runners/reimaginethegame.html';
-  } else if (game.value === 'revengeofthestickman') {
-    window.location.href = 'runners/revengeofthestickman.html';
-  } else if (game.value === 'roadrush') {
-    window.location.href = 'runners/roadrush.html';
-  } else if (game.value === 'robotunicornattack') {
-    window.location.href = 'runners/robotunicornattack.html';
-  } else if (game.value === 'robotunicornheavymetal') {
-    window.location.href = 'runners/robotunicornheavymetal.html';
-  } else if (game.value === 'rotateandrollplayerspack') {
-    window.location.href = 'runners/rotateandrollplayerspack.html';
-  } else if (game.value === 'run') {
-    window.location.href = 'runners/run.html'
-  } else if (game.value === 'runandgun') {
-    window.location.href = 'runners/runandgun.html';
-  } else if (game.value === 'sandcastle') {
-    window.location.href = 'runners/sandcastle.html';
-  } else if (game.value === 'shopempire3') {
-    window.location.href = 'runners/shopempire3.html';
-  } else if (game.value === 'shoppingcarthero') {
-    window.location.href = 'runners/shoppingcarthero.html';
-  } else if (game.value === 'shoppingcity') {
-    window.location.href = 'runners/shoppingcity.html';
-  } else if (game.value === 'shoppingstreet') {
-    window.location.href = 'runners/shoppingstreet.html';
-  } else if (game.value === 'skiesofwar') {
-    window.location.href = 'runners/skiesofwar.html';
-  } else if (game.value === 'skullkid') {
-    window.location.href = 'runners/skullkid.html';
-  } else if (game.value === 'slingette') {
-    window.location.href = 'runners/slingette.html';
-  } else if (game.value === 'smalltownracing') {
-    window.location.href = 'runners/smalltownracing.html';
-  } else if (game.value === 'snailbob') {
-    window.location.href = 'runners/snailbob.html';
-  } else if (game.value === 'snailbob2') {
-    window.location.href = 'runners/snailbob2.html';
-  } else if (game.value === 'snailbob3') {
-    window.location.href = 'runners/snailbob3.html';
-  } else if (game.value === 'snailbob4space') {
-    window.location.href = 'runners/snailbob4space.html';
-  } else if (game.value === 'snailbob5lovestory') {
-    window.location.href = 'runners/snailbob5lovestory.html';
-  } else if (game.value === 'snailbob6winterstory') {
-    window.location.href = 'runners/snailbob6winterstory.html';
-  } else if (game.value === 'snailbob7fantasystory') {
-    window.location.href = 'runners/snailbob7fantasystory.html';
-  } else if (game.value === 'sniperassassin') {
-    window.location.href = 'runners/sniperassassin.html';
-  } else if (game.value === 'sniperassassin2') {
-    window.location.href = 'runners/sniperassassin2.html';
-  } else if (game.value === 'sniperassassin3') {
-    window.location.href = 'runners/sniperassassin3.html';
-  } else if (game.value === 'sniperassassin4') {
-    window.location.href = 'runners/sniperassassin4.html';
-  } else if (game.value === 'sniperassassin5') {
-    window.location.href = 'runners/sniperassassin5.html';
-  } else if (game.value === 'soniclostinmarioworld') {
-    window.location.href = 'runners/soniclostinmarioworld.html';
-  } else if (game.value === 'stealingthediamond') {
-    window.location.href = 'runners/stealingthediamond.html';
-  } else if (game.value === 'stickmanbadminton') {
-    window.location.href = 'runners/stickmanbadminton.html';
-  } else if (game.value === 'supermario63') {
-    window.location.href = 'runners/supermario63.html';
-  } else if (game.value === 'supermarioflash') {
-    window.location.href = 'runners/supermarioflash.html';
-  } else if (game.value === 'supersmashflash') {
-    window.location.href = 'runners/supersmashflash.html'
-  } else if (game.value === 'supersmashflash2') {
-    window.location.href = 'runners/supersmashflash2.html'
-  } else if (game.value === 'supersudoku2011') {
-    window.location.href = 'runners/supersudoku2011.html';
-  } else if (game.value === 'sushicat') {
-    window.location.href = 'runners/sushicat.html'
-  } else if (game.value === 'trex') {
-    window.location.href = 'runners/trex.html'
-  } else if (game.value === 'tacticalassassin') {
-    window.location.href = 'runners/tacticalassassin.html'
-  } else if (game.value === 'tacticalassassin2') {
-    window.location.href = 'runners/tacticalassassin2.html'
-  } else if (game.value === 'tanktroubledeathmatch') {
-    window.location.href = 'runners/tanktroubledeathmatch.html'
-  } else if (game.value === 'thegame') {
-    window.location.href = 'runners/thegame.html'
-  } else if (game.value === 'thegrimadventuresofbillandmandymagnetface') {
-    window.location.href = 'runners/thegrimadventuresofbillandmandymagnetface.html'
-  } else if (game.value === 'thegrimadventuresofbillandmandythefrightbeforechristmas') {
-    window.location.href = 'runners/thegrimadventuresofbillandmandythefrightbeforechristmas.html'
-  } else if (game.value === 'theimpossiblequiz') {
-    window.location.href = 'runners/theimpossiblequiz.html'
-  } else if (game.value === 'thelaststand') {
-    window.location.href = 'runners/thelaststand.html'
-  } else if (game.value === 'thelaststand3') {
-    window.location.href = 'runners/thelaststand3.html'
-  } else if (game.value === "theworld'shardestgame") {
-    window.location.href = "runners/theworld'shardestgame.html"
-  } else if (game.value === "theworld'shardestgame2") {
-    window.location.href = "runners/theworld'shardestgame2.html"
-  } else if (game.value === "theworld'shardestgame3") {
-    window.location.href = "runners/theworld'shardestgame3.html"
-  } else if (game.value === 'thisistheonlylevel') {
-    window.location.href = 'runners/thisistheonlylevel.html'
-  } else if (game.value === 'thisistheonlylevel2') {
-    window.location.href = 'runners/thisistheonlylevel2.html'
-  } else if (game.value === 'tomandjerryrefrigerraiders') {
-    window.location.href = 'runners/tomandjerryrefrigerraiders.html'
-  } else if (game.value === "tomandjerrytopm'strapomatic") {
-    window.location.href = "runners/tomandjerrytopm'strapomatic.html"
-  } else if (game.value === 'truckloader2') {
-    window.location.href = 'runners/truckloader2.html'
-  } else if (game.value === 'truckloader4') {
-    window.location.href = 'runners/truckloader4.html'
-  } else if (game.value === 'ultimateflashsonic') {
-    window.location.href = 'runners/ultimateflashsonic.html'
-  } else if (game.value === 'unfairmario') {
-    window.location.href = 'runners/unfairmario.html'
-  } else if (game.value === 'upgradecomplete') {
-    window.location.href = 'runners/upgradecomplete.html'
-  } else if (game.value === 'videogamethegame') {
-    window.location.href = 'runners/videogamethegame.html'
-  } else if (game.value === 'viridianroom'){
-    window.location.href = 'runners/viridianroom.html'
-  }else if (game.value === 'warfare1917') {
-    window.location.href = 'runners/warfare1917.html'
-  } else if (game.value === 'weaponblackhawk') {
-    window.location.href = 'runners/weaponblackhawk.html'
-  } else if (game.value === 'wormfood') {
-    window.location.href = 'runners/wormfood.html'
-  }
-}
+    <div class="links">
+      <a href="https://qinx99.github.io/hub4/">
+        <div class="home">
+          <p>Home</p>
+        </div>
+      </a>
+
+      <a href="https://qinx99.github.io/hub/">
+        <div class="hub1">
+          <p>Hub 1</p>
+        </div>
+      </a>
+
+      <a href="">
+        <div class="hub2">
+          <p>Hub 2</p>
+        </div>
+      </a>
+
+      <a href="https://qinx99.github.io/hub4/htmls/updates.html">
+        <div class="updates">
+          <p>Updates</p>
+        </div>
+      </a>
+
+      <a href="https://qinx99.github.io/hub4/htmls/events.html">
+        <div class="events">
+          <p>Events</p>
+        </div>
+      </a>
+
+      <a href="https://qinx99.github.io/hub4/htmls/featuredgames.html">
+        <div class="featuredgames">
+          <p>Featured Games</p>
+        </div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="text">
+        <h1>What game do you want to play?</h1>
+      </div>
+      <select name="games" id="games">
+        <option value=""></option>
+        <option value="abduction">Abduction</option>
+        <option value="achievmentunlocked">Achievment Unlocked</option>
+        <option value="achievmentunlocked2">Achievment Unlocked 2</option>
+        <option value="ageofwar">Age Of War</option>
+        <option value="ageofwar2">Age Of War 2</option>
+        <option value="appleshooter">Apple Shooter</option>
+        <option value="arcs">ARCS</option>
+        <option value="armormayhem">Armor Mayhem</option>
+        <option value="badpiggies">Bad Piggies</option>
+        <option value="battleships">Battle Ships</option>
+        <!--10-->
+        <option value="beatupyourpc">Beat Up Your PC</option>
+        <option value="bigredbutton">Big Red Button</option>
+        <option value="bloonsplayerpack">Bloons Player Pack</option>
+        <option value="bloonsplayerpack2">Bloons Player Pack 2</option>
+        <option value="bloonsplayerpack3">Bloons Player Pack 3</option>
+        <option value="bloonsplayerpack4">Bloons Player Pack 4</option>
+        <option value="bloonspop3">Bloons Pop 3</option>
+        <option value="bloonssupermonkey">Bloons Super Monkey</option>
+        <option value="bloonstowerdefense">Bloons Tower Defense</option>
+        <option value="bloonstowerdefense2">Bloons Tower Defense 2</option>
+        <!--20-->
+        <option value="bloonstowerdefense3">Bloons Tower Defense 3</option>
+        <option value="bloonstowerdefense4">Bloons Tower Defense 4</option>
+        <option value="bloonstowerdefense4expansion">
+          Bloons Tower Defense 4 Expansion
+        </option>
+        <option value="bloxorz">Bloxorz</option>
+        <option value="boombot">Boom Bot</option>
+        <option value="boombot2">Boom Bot 2</option>
+        <option value="boxhead2play">Boxhead 2 Play</option>
+        <option value="breakingintothebank">Breaking Into The Bank</option>
+        <option value="bridgetactics">Bridge Tactics</option>
+        <option value="buildingdemolisher">Building Demolisher</option>
+        <option value="canyondefense">Canyon Defense</option>
+        <!--30-->
+        <option value="catmario">Cat Mario</option>
+        <option value="causalitycamp">Causality Camp</option>
+        <option value="causalityfestival">Causality Festival</option>
+        <option value="causalitykitchen">Causality Kitchen</option>
+        <option value="caveman">Caveman</option>
+        <option value="chibikinght">Chilbi Knight</option>
+        <option value="chibikinghthacked">Chilbi Knight Hacked</option>
+        <option value="chinesecheckers">Chinese Checkers</option>
+        <option value="clickdeathbowling">Click Death Bowling</option>
+        <!--40-->
+        <option value="coverorange">Cover Orange</option>
+        <option value="coverorangejourneypirates">
+          Cover Orange Journey Pirates
+        </option>
+        <option value="coverorangeknights">Cover Orange Knights</option>
+        <option value="coverorangewildwest">Cover Orange Wild West</option>
+        <option value="crushthecastle2">Crush The Castle 2</option>
+        <option value="crimsonroom">Crimson Room</option>
+        <option value="cubedroidsavesthecalaxy">
+          Cube Droid Saves The Galaxy
+        </option>
+        <option value="cubefield">Cubefield</option>
+        <option value="cursor10">Cursor*10</option>
+        <option value="cursorinvisible">Cursor Invisible</option>
+        <option value="dacep27">DaC Ep27</option>
+        <option value="deadparadise">Dead Paradise 2</option>
+        <!--50-->
+        <option value="doodlegod">Doodlegod</option>
+        <option value="duckhunt">Duck Hunt</option>
+        <option value="ducklife1">Duck Life 1</option>
+        <option value="ducklife2">Duck Life 2</option>
+        <option value="ducklife2hacked">Duck Life 2 Hacked</option>
+        <option value="ducklife3">Duck Life 3</option>
+        <option value="ducklife3hacked">Duck Life 3 Hacked</option>
+        <option value="ducklife4">Duck Life 4</option>
+        <option value="ducklife4hacked">Duck Life 4 Hacked</option>
+        <option value="dumpertruck">Dumper Truck</option>
+        <!--60-->
+        <option value="earntodie">Earn To Die</option>
+        <option value="earntodie2012part2">Earn To Die 2012 Part 2</option>
+        <option value="electricman2">ElectricMan 2</option>
+        <option value="electricman2hacked">ElectricMan 2 Hacked</option>
+        <option value="endoftheworld">End of The World</option>
+        <option value="escapingtheprison">Escaping The Prison</option>
+        <option value="fancypantsworld1">Fancy Pants World 1</option>
+        <option value="fancypantsworld2">Fancy Pants World 2</option>
+        <option value="feedus1">Feed Us 1</option>
+        <option value="feedus2">Feed Us 2</option>
+        <!--70-->
+        <option value="feedus3">Feed Us 3</option>
+        <option value="feedus4">Feed Us 4</option>
+        <option value="feedus5">Feed Us 5</option>
+        <option value="feedushappy">Feed Us Happy</option>
+        <option value="feeduslostisland">Feed Us Lost Island</option>
+        <option value="feeduspirates">Feed Us Pirates</option>
+        <option value="feedusxmasexpansion">Feed Us Xmas Expansion</option>
+        <option value="fireboyandwatergirl1">
+          FireBoy and WaterGirl: In The Forest Temple
+        </option>
+        <option value="flappybird">Flappy Bird</option>
+        <option value="fleeingthecomplex">Fleeing the Comlex</option>
+        <!--80-->
+        <option value="flight">Flight</option>
+        <option value="flingecommerce">Fling Ecommerce</option>
+        <option value="fostershomeforimaginaryfriendswiltswashnswoosh">
+          Foster's Home for Imaginary Friends - Wilt's Wash N' Swoosh
+        </option>
+        <option value="fragger">Fragger</option>
+        <option value="giveup2">Give Up 2</option>
+        <option value="goldminer">Gold Miner</option>
+        <option value="goldminerhacked">Gold Miner Hacked</option>
+        <option value="goldminerspecialedition">
+          Gold Miner Special Edition
+        </option>
+        <option value="gravityduckhacked">Gravity Duck Hacked</option>
+        <!--90-->
+        <option value="growcube">Grow Cube</option>
+        <option value="growisland">Grow Island</option>
+        <option value="grownano">Grow Nano</option>
+        <option value="growvalley">Grow Valley</option>
+        <option value="gunblood">Gun Blood</option>
+        <option value="gunmayhem">Gun Mayhem</option>
+        <option value="gunmayhem2">Gun Mayhem 2</option>
+        <option value="handlessmillionaire">Handless Millionaire</option>
+        <option value="hauntthehouse">Haunt The House</option>
+        <option value="idoneveknow">I Dont Even Know</option>
+        <!--100-->
+        <option value="isawhertoo,withlasers">
+          I Saw Her Too, With Lasers
+        </option>
+        <option value="jacksmith">Jack Smith</option>
+        <option value="jumpit!">Jump It!</option>
+        <option value="jumpit!2">Jump It! 2</option>
+        <option value="kingdomrush">Kingdom Rush</option>
+        <option value="kindomrushfrontiers">Kingdom Rush Frontiers</option>
+        <option value="kittencannon">Kitten Cannon</option>
+        <option value="kndflightofthehamster">
+          KND - Flight of the Hamster
+        </option>
+        <option value="kndoperationz.e.r.ooutnumbuh'd!">
+          KND - Operation Z.E.R.O Outnumbuh'd!
+        </option>
+        <option value="kndrainbowmonkeyrundown">
+          KND - Rainbow Monkey Rundown
+        </option>
+        <!--110-->
+        <option value="learntofly">Learn To Fly</option>
+        <option value="learntofly2">Learn To Fly2</option>
+        <option value="linerider2">Line Rider 2</option>
+        <option value="mahjong">Mahjong</option>
+        <option value="meatboy">Meat Boy</option>
+        <option value="mechaarena">Mecha Arena</option>
+        <option value="meeblings2">Meedblings 2</option>
+        <option value="miamishark">Miami Shark</option>
+        <option value="mineblocks">Mine Blocks</option>
+        <option value="minecrafttowerdefense">Minecraft Tower Defense</option>
+        <option value="minecrafttowerdefense2">
+          Minecraft Tower Defense 2
+        </option>
+        <!--120-->
+        <option value="nyancatlostinspace">Nyan Cat Lost In Space</option>
+        <option value="obeythegame">Obey The Game</option>
+        <option value="offtherails">Off The Rails</option>
+        <option value="pandemic2">Pandemic 2</option>
+        <option value="papa'sburgeria">Papa's Burgeria</option>
+        <option value="papa'scheezeria">Papa's Cheezeria</option>
+        <option value="papa'scupcakeria">Papa's Cupcakeria</option>
+        <option value="papa'sdonuteria">Papa's Donuteria</option>
+        <option value="papa'sfreezeria">Papa's Freezeria</option>
+        <option value="papa'shotdogeria">Papa's Hotdogeria</option>
+        <!--130-->
+        <option value="papalouie">Papa Louie</option>
+        <option value="papa'spancakeria">Papa's Pancakeria</option>
+        <option value="papa'spasteria">Papa's Pasteria</option>
+        <option value="papa'spizzeria">Papa's Pizzeria</option>
+        <option value="papa'stacomia">Papa's Taco Mia</option>
+        <option value="penguindiner">Penguin Diner</option>
+        <option value="pixelchixjamminhamster">
+          Pixel Chix Jammin Hamster
+        </option>
+        <option value="pixelchixmonsterbaby">Pixel Chix Monster Baby</option>
+        <option value="pokemontowerdefence">Pokemon Tower Defense</option>
+        <option value="pong">Pong</option>
+        <!--140-->
+        <option value="portaltheflashversion">Portal The Flash Version</option>
+        <option value="qwop">QWOP</option>
+        <option value="raftwars">Raft Wars</option>
+        <option value="raftwars2">Raft Wars 2</option>
+        <option value="redball">Red Ball</option>
+        <option value="redball2">Red Ball 2</option>
+        <option value="redball3">Red Ball 3</option>
+        <option value="redball4v1">Red Ball 4 Vol.1</option>
+        <option value="redball4v2">Red Ball 4 Vol.2</option>
+        <option value="redball4v3">Red Ball 4 Vol.3</option>
+        <option value="red&blueballs">Red & Blue Balls</option>
+        <option value="red&blueballs2">Red & Blue Balls 2</option>
+        <option value="red&blueballs3">Red & Blue Balls 3</option>
+        <option value="reimaginethegame">Reimageine The Game</option>
+        <option value="revengeofthestickman">Revenge Of The Stickman</option>
+        <option value="roadrush">Road Rush</option>
+        <option value="robotunicornattack">Robot Unicorn Attack</option>
+        <option value="robotunicornheavymetal">
+          Robot Unicorn Heavy Metal
+        </option>
+        <option value="rotateandrollplayerspack">
+          Rotate And Roll Players Pack
+        </option>
+        <!--150-->
+        <option value="run">Run</option>
+        <option value="runandgun">Run And Gun</option>
+        <option value="sandcastle">Sand Castle</option>
+        <option value="shopempire3">Shop Empire 3</option>
+        <option value="shoppingcarthero">Shopping Cart Hero</option>
+        <option value="shoppingcity">Shopping City</option>
+        <option value="shoppingstreet">Shopping Street</option>
+        <option value="skiesofwar">Skies of War</option>
+        <option value="skullkid">Skull Kid</option>
+        <option value="slingette">Slingette</option>
+        <option value="smalltownracing">Small Town Racing</option>
+        <!--160-->
+        <option value="snailbob">Snail Bob</option>
+        <option value="snailbob2">Snail Bob 2</option>
+        <option value="snailbob3">Snail Bob 3</option>
+        <option value="snailbob4space">Snail Bob 4 Space</option>
+        <option value="snailbob5lovestory">Snail Bob 5 Love Story</option>
+        <option value="snailbob6winterstory">Snail Bob 6 Winter Story</option>
+        <option value="snailbob7fantasystory">Snail Bob 7 Fantasy Story</option>
+        <option value="sniperassassin">Sniper Assassin</option>
+        <option value="sniperassassin2">Sniper Assassin 2</option>
+        <option value="sniperassassin3">Sniper Assassin 3</option>
+        <!--170-->
+        <option value="sniperassassin4">Sniper Assassin 4</option>
+        <option value="sniperassassin5">Sniper Assassin 5</option>
+        <option value="soniclostinmarioworld">Sonic Lost In Mario World</option>
+        <option value="stealingthediamond">Stealing The Dimaond</option>
+        <option value="stickwar">Stick War</option>
+        <option value="stickmanbadminton">Stickman Badminton</option>
+        <option value="supermario63">Super Mario 63</option>
+        <option value="supermarioflash">Super Mario Flash</option>
+        <option value="supersmashflash">Super Smash Flash</option>
+        <option value="supersmashflash2">Super Smash Flash 2</option>
+        <option value="supersudoku2011">Super Sudoku 2011</option>
+        <option value="sushicat">Sushi Cat</option>
+        <option value="trex">T-Rex</option>
+        <option value="tacticalassassin">Tactical Assassin</option>
+        <option value="tacticalassassin2">Tactical Assassin 2</option>
+        <option value="tanktroubledeathmatch">Tank Trouble Deathmatch</option>
+        <option value="thegame">The Game</option>
+        <option value="thegrimadventuresofbillandmandymagnetface">
+          The Grim Adventures of Bill and Mandy - Magnet Face
+        </option>
+        <option value="thegrimadventuresofbillandmandythefrightbeforechristmas">
+          The Grim Adventures of Bill and Mandy - The Fright Before Christmas
+        </option>
+        <option value="theimpossiblequiz">The Impossible Quiz</option>
+        <option value="thelaststand">The Last Stand</option>
+        <option value="thelaststand3">The Last Stand 3</option>
+        <option value="theworld'shardestgame">The World's Hardest Game</option>
+        <option value="theworld'shardestgame2">
+          The World's Hardest Game 2
+        </option>
+        <option value="theworld'shardestgame3">
+          The World's Hardest Game 3
+        </option>
+        <option value="thisistheonlylevel">This Is The Only Level</option>
+        <option value="thisistheonlylevel2">This Is The Only Level 2</option>
+        <option value="tomandjerryrefrigerraiders">
+          Tom and Jerry - Refriger Raiders
+        </option>
+        <option value="tomandjerrytopm'strapomatic">
+          Tom and Jerry - Tom's Trap-0-Matic
+        </option>
+        <option value="truckloader2">Truck Loader 2</option>
+        <option value="truckloader4">Truck Loader 4</option>
+        <option value="ultimateflashsonic">Ultimate Flash Sonic</option>
+        <option value="unfairmario">Unfair Mario</option>
+        <option value="upgradecomplete">Upgrade Complete</option>
+        <option value="videogamethegame">Video Game The Game</option>
+        <option value="viridianroom">Viridian Room</option>
+        <option value="warfare1917">Warfare 1917</option>
+        <option value="weaponblackhawk">Weapon - Black Hawk</option>
+        <option value="wormfood">Worm - Food</option>
+      </select>
+      <input type="button" value="play!" id="play" onclick="selectGame()" />
+      <img src="images/200w.gif" alt="" />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
